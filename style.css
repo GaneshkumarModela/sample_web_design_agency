@@ -1,0 +1,92 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  /* display: inline-block; */
+  flex: 1;
+}
+h1 {
+  font-size: 5rem;
+}
+
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+.tile-image{
+  /* width:299.8px; */
+
+  height:200px;
+  float: left;
+  /* e point kaada nen chaala time waste chesa ,so we have 
+  to know that margin property is so powerful in layouts */
+  margin-right: 50px;
+
+}
+
+.card{
+  width:45%;
+}
+
+.left{
+  
+  float:left;
+
+
+}
+
+.right{
+
+  float:right;
+}
+
+.creative{
+  color:midnightblue;
+
+}
+
+
+.card-text{
+  text-align: justify;
+
+}
+
+                                 /* Now i have to add responsivenes to my webpage 
+                                                  using media queries */
+
+@media (max-width:680px){
+  .logo {
+    width: 100px;
+}
+ h1 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.card{
+  display: block;
+  width:100%;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+.tile-image{
+  margin-bottom: 10px;
+  width:100%;
+  /* Didn't applied this two properties because as image was present in div box and we gave width as 100% ,so it occupies 
+  whole width of the div box,so no need to apply display property again as block or inline */
+  
+  /* display: inline;
+  object-fit: cover; */
+}
+
+
+}
+
+
